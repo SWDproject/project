@@ -24,12 +24,15 @@ calculate_review_schedule() {
     # Convert the lecture date to a timestamp for calculation
     lecture_timestamp=$(date -d "$lecture_date" +%s)
 
-    # Calculate review dates
-    review1_date=$(date -d "@$(($lecture_timestamp + 86400))" +%Y-%m-%d)
-    review2_date=$(date -d "@$(($lecture_timestamp + 259200))" +%Y-%m-%d)
-    review3_date=$(date -d "@$(($lecture_timestamp + 604800))" +%Y-%m-%d)
-    review4_date=$(date -d "@$(($lecture_timestamp + 1209600))" +%Y-%m-%d)
-    review5_date=$(date -d "@$(($lecture_timestamp + 2592000))" +%Y-%m-%d)
+# Convert the lecture date to a timestamp for easy calculation
+    lecture_timestamp=$(date -d "$lecture_date" +%s)
+
+    # Calculate the review dates based on the defined intervals
+    review1_date=$(date -d "@$(($lecture_timestamp + 86400))" +%Y-%m-%d)  # 1 day after the lecture
+    review2_date=$(date -d "@$(($lecture_timestamp + 259200))" +%Y-%m-%d)  # 3 days after the lecture
+    review3_date=$(date -d "@$(($lecture_timestamp + 604800))" +%Y-%m-%d)  # 7 days after the lecture
+    review4_date=$(date -d "@$(($lecture_timestamp + 1209600))" +%Y-%m-%d) # 14 days after the lecture
+    review5_date=$(date -d "@$(($lecture_timestamp + 2592000))" +%Y-%m-%d) # 30 days after the lecture
 
     # If the file doesn't exist, create it
     if [ ! -f "$file" ]; then
