@@ -43,4 +43,4 @@ manage_lesson() {
     fi
 }
 
-manage_lesson
+

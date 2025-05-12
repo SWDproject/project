@@ -55,4 +55,4 @@ calculate_review_schedule() {
     echo "Review schedule for '$lesson' has been added to '$file'."
 }
 
-calculate_review_schedule
+
