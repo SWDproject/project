@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# This function allows the user to mark a lesson as completed or delete it completely.
-# It searches for the lesson in the subject file and performs the action based on user choice.
-
 manage_lesson() {
     echo "Enter subject name:"
     read subject
@@ -45,3 +42,5 @@ manage_lesson() {
         echo "Invalid choice."
     fi
 }
+
+
