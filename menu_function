@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Main menu function
+main_menu() {
+  # Check if no user is logged in using the direct string comparison
+  if [ "$current_user" == "" ]; then
+    echo "No user logged in. Please log in first."
+    return
+  fi
+
+  # Loop to display the menu repeatedly
+  while true; do
+    echo ""
+    echo "==== Main Menu ===="
+    echo "1) Create Account"  # Option to create a new user account
+    echo "2) Login"  # Option to log in as an existing user
+    echo "3) Add Lesson"  # Option to add a new lesson
+    echo "4) Delete or Mark Complete"  # Option to delete or mark lesson as complete
+    echo "5) View Review Schedule"  # Option to view the review schedule
+    echo "6) Log Out"  # Option to log out of the current account
+    echo "===================="
+    echo "Choose an option:"
+    read choice  # Read the user's choice
+
+    # Execute the corresponding function based on the user's choice
+    case $choice in
+      1) create_account() 
+      ;;  
+      2) login()
+      ;;  
+      3) calculate_review_schedule()
+      ;;  
+      4) delete_or_mark_complete()
+      ;;  
+      5) view_schedule()
+      ;;  
+      6) current_user=""; echo "Logged out."; # Log the user out and exit the loop
+      break ;;  
+      *) echo "Invalid choice." # If the user enters an invalid choice, show an error message
+      ;;  
+    esac
+  done
+}
+
+
+    
