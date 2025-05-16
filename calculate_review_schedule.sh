@@ -24,9 +24,6 @@ calculate_review_schedule() {
     # Convert the lecture date to a timestamp for calculation
     lecture_timestamp=$(date -d "$lecture_date" +%s)
 
-# Convert the lecture date to a timestamp for easy calculation
-    lecture_timestamp=$(date -d "$lecture_date" +%s)
-
     # Calculate the review dates based on the defined intervals
     review1_date=$(date -d "@$(($lecture_timestamp + 86400))" +%Y-%m-%d)  # 1 day after the lecture
     review2_date=$(date -d "@$(($lecture_timestamp + 259200))" +%Y-%m-%d)  # 3 days after the lecture
