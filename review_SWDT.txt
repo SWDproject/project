@@ -1,9 +1,0 @@
-Lesson: Software Design Principles
-Software design is the process of organizing and structuring program components to be efficient and maintainable.
-Key principles include:
- • Modularity: Dividing the program into independent, reusable units.
- • Encapsulation: Hiding implementation details and protecting data.
- • Separation of Concerns: Separating different functions in the program to ease understanding and development.
- • Reusability: Writing components that can be used in other projects.
- • Flexibility: The ability to easily modify the system when changes occur.
-Applying these principles helps improve software quality and reduce errors.
