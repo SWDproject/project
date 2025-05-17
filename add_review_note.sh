@@ -35,8 +35,10 @@ add_review_note() {
   #Define the note label depending on the review number
   if [ "$review_num" = "general" ]; then
     note_label="General Note"
+    return 0
   else
     note_label="Review ${review_num}  Note"
+    return 1
   fi
 
   #Insert the note before the separator line (---) in the lesson block
