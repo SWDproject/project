@@ -1,0 +1,19 @@
+Lesson Title: Introduction to Databases
+Status: completed
+Lecture Date: 2025-04-25
+Review 1: 2025-04-26
+Review 2: 2025-04-28
+Review 3: 2025-05-02
+Review 4: 2025-05-09
+Review 5: 2025-05-25
+---
+
+Lesson Title: SQL Basics
+Status: pending
+Lecture Date: 2025-05-03
+Review 1: 2025-05-04
+Review 2: 2025-05-06
+Review 3: 2025-05-10
+Review 4: 2025-05-17
+Review 5: 2025-06-02
+---

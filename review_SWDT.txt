@@ -1,0 +1,18 @@
+Lesson Title: Shell Scripting
+Status: pending
+Lecture Date: 2025-05-01
+Review 1: 2025-05-02
+Review 2: 2025-05-04
+Review 3: 2025-05-08
+Review 4: 2025-05-15
+Review 5: 2025-05-31
+---
+Lesson Title: Git Basics
+Status: completed
+Lecture Date: 2025-04-20
+Review 1: 2025-04-21
+Review 2: 2025-04-23
+Review 3: 2025-04-27
+Review 4: 2025-05-04
+Review 5: 2025-05-20
+---
