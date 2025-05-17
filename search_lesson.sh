@@ -29,5 +29,4 @@ search_lesson() {
   fi
 }
 
-# Call the function
-search_lesson
+
