@@ -38,7 +38,7 @@ main_menu() {
             current_user="some_user"  # Set current_user after successful login (can be updated later)
             echo "Welcome! Please choose an option from the menu below."
           else
-            echo "Login failed, please try again."
+            echo 
           fi
           ;;
         -1) 
