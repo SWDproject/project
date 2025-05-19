@@ -34,4 +34,4 @@ login() {
   fi
 }
 
-login
+
