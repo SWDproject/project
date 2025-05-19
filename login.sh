@@ -29,8 +29,10 @@ login() {
   # Compare the stored hashed password from the user file 
   if [ "$hashed_password" == "$stored_password" ]; then
     echo "Login successful"
+    return 0
   else
     echo "Invalid username or password."
+    return 1
   fi
 }
 
