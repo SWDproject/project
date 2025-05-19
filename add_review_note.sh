@@ -4,18 +4,6 @@ add_review_note() {
   # Prompt user for the subject name
   echo -n "Enter subject name: "
   read subject
-  
-  # Prompt for the lesson title
-  echo -n "Enter lesson title: "
-  read lesson
-  
-  #Prompt for which review this note applies to (1-5 or general)
-  echo -n "Which review is this? (1-5 or general): "
-  read review_num
-  
-  #Prompt for the note content
-  echo -n "Enter your note: "
-  read note
 
   #Build the file name based on the subject
   FILE="review_${subject}.txt"
@@ -26,11 +14,23 @@ add_review_note() {
     return 1
   fi
   
+  # Prompt for the lesson title
+  echo -n "Enter lesson title: "
+  read lesson
+  
   #Verify that the lesson exists in the file
   if ! grep -q "$lesson" "$FILE"; then
     echo "Lesson not found."
     return 1
   fi
+  
+  #Prompt for which review this note applies to (1-5 or general)
+  echo -n "Which review is this? (1-5 or general): "
+  read review_num
+  
+  #Prompt for the note content
+  echo -n "Enter your note: "
+  read note
   
   #Define the note label depending on the review number
   if [ "$review_num" = "general" ]; then
@@ -56,4 +56,5 @@ add_review_note() {
 
   echo "Note added Successfully."
 }
-  
+ 
+
