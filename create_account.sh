@@ -33,4 +33,4 @@ create_account() {
   echo "Account created successfully"
 }
 
-create_account
+
